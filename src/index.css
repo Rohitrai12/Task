@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0 !important;
+}
+
+.home {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background-color: #6d8a5f8c;
+}
+
+.one {
+    margin-right: 7px;
+    width: 31px;
+}
+
+.two{
+    width: 48px;    
+}
+
+.right {
+    width: 50%;
+    background-color: white;
+    height: 100vh;
+    border-radius: 25px 0px 0px 25px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Align content to the top */
+    align-items: center;
+    padding-top: 20px;
+    /* Add some top padding for spacing */
+    z-index: 100;
+    border-radius: 50px 0px 0px 50px !important;
+}
+
+.left img {
+    width: 600px;
+    height: 600px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Aladin";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 49.04px;
+    text-align: left;
+    width: 57px;
+    height: 49px;
+    gap: 0px;
+    opacity: 0.9px;
+}
+
+.heading {
+    font-family: "Poppins";
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 51px;
+    text-align: left;
+    width: 272px;
+    height: 51px;
+    gap: 0px;
+    opacity: 0.7px;
+}
+
+
+/* Existing styles remain the same */
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    /* Adjust the maximum width of the form as needed */
+    margin-top: 90px;
+    /* Add some top margin for spacing */
+    font-family: 'Poppins' !important;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    /* Add space between form groups */
+}
+
+label {
+    /* Make labels bold for better visibility */
+    display: block;
+    /* Display labels in block to ensure they are above inputs */
+    color: #aabfa8;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #aabfa8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 408px;
+}
+
+
+.others {
+    margin-top: 20px;
+    /* Add some top margin for spacing */
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: -1px;
+}
+
+.options img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    /* Add some space between social login icons */
+}
+
+.others p {
+    color: #6d8a5f8c;
+    font-family: "Poppins";
+}
+
+.already {
+    width: 237px;
+    height: 27px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: left;
+    margin-top: 26px;
+}
+
+.last {
+    display: flex;
+}
+
+.login {
+    color: #aabfa8;
+    margin-top: 29px;
+    margin-left: 13px;
+    font-size: 19px;
+}
+
+/* Apply responsive styles */
+
+/* For smaller screens, adjust layout */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left {
+        width: 100%;
+        height: auto;
+    }
+
+    .left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .right {
+        width: 100%;
+        border-radius: 0 !important;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .form {
+        margin-top: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .options .social-icons img {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    .already,
+    .login {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: calc(100% - 55px);
+        /* Adjust width to leave space for padding */
+    }
+
+    button {
+        width: calc(100% - 55px);
+        /* Adjust width to leave space for padding */
+    }
+
+    .login {
+        margin-left: -12px;
+    }
+}
